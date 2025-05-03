@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        #heading{
+            color: blue;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: Algeria;
+        }
+    </style>
+
+</head>
+<body>
+    <p id="heading">hello user</p>
+    <p id="heading">welcome user</p>
+</body>
+</html>
+
+<script type="text/javascript">
+    pElement = document.getElementById("heading");
+    console.log(pElement); // This will return the first element with id heading.
+
+    pElement.style.fontFamily = "Arial"
+
+    pElement.style.cssText = "color: red; border: 1px dotted black; margin: 25px; padding: 10px;"
+</script>
