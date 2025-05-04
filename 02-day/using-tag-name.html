@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My shopping list</h2>
+    <ul>
+        <li>Iphone</li>
+        <li>Oneplus</li>
+        <li>Samsung</li>
+    </ul>
+    <button onclick="changeEffects()">Highlight Text</button>
+    <script type="text/javascript">
+        function changeEffects(){
+            liElements = document.getElementsByTagName('li');
+            [... liElements].forEach(
+                (value) => {
+                    value.style.cssText = 'margin:25px; color:goldenrod;'
+                }
+            )
+        }
+    </script>
+    </body>
+</html>
