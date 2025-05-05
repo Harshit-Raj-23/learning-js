@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function addContent(){
+            // document.write('Welcome to the world of JavaScript!!!');
+            // document.writeln('JavaScript is a cool stuff...');
+            // document.write('JavaScript is very dangerous if not understood...');
+
+            h1 = document.createElement(h1);
+            h1.textContent = 'Hello World';
+            document.body.appendChild(h1);        }
+
+    </script>
+</head>
+<body>
+    <h1> Hello User </h1>
+
+    <button type="button" onclick="addContent()"> Add Content </button>
+</body>
+</html>
